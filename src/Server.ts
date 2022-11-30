@@ -5,6 +5,7 @@ import messageSender from "./Bot";
 import getAllUsers from "./database/services/getAllUsers";
 
 const app = express();
+const port = process.env.PORT;
 app.use(helmet());
 app.use(cors());
 app.use(express.urlencoded({extended: true}))
@@ -27,6 +28,9 @@ app.get("/getAllUsers", async (req: any, res: any) => {
 });
 
 
-app.listen(8080);
+app.listen(port, () => {
+    return console.log(`[server]: Server is running on ${port}`);
+});
+
 export default app;
 
