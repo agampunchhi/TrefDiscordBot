@@ -4,8 +4,8 @@
   "description": "TrefloIntern Discord Bot",
   "main": "src/Server.ts",
   "engines": {
-    "node": "8.19.2",
-    "npm": "16.18.1"
+    "npm": "8.19.2",
+    "node": "16.18.1"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
